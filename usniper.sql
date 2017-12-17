@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 17, 2017 at 03:41 AM
+-- Generation Time: Dec 17, 2017 at 03:58 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.1
 
@@ -186,7 +186,8 @@ INSERT INTO `nguoidung` (`id`, `userName`, `pass`, `tenNguoiDung`, `soThich`, `Q
 (24, '12345', '07676b60675193f89d75720cbff07694', 'default', NULL, 2, NULL, NULL, NULL, 1, NULL, '513296112525350914028356926052316833968148490183369'),
 (25, 'ass', '494b091dc1f2550ce644e847f7cd9f58', 'default', NULL, 2, NULL, NULL, NULL, 1, NULL, '51329611255611536751531123063129641316813984'),
 (26, 'test', '827ccb0eea8a706c4c34a16891f84e7b', 'default', 'dealine', 1, NULL, 'deadline.jpg', NULL, 1, NULL, '513296112525341851733492331513296112525341'),
-(27, 'myadmin1234', 'e10adc3949ba59abbe56e057f20f883e', 'kuma', NULL, 1, NULL, NULL, NULL, 1, NULL, NULL);
+(27, 'myadmin1234', 'e10adc3949ba59abbe56e057f20f883e', 'kuma', NULL, 1, NULL, NULL, NULL, 1, NULL, NULL),
+(28, '12234124', 'e10adc3949ba59abbe56e057f20f883e', '123456', NULL, 1, NULL, NULL, '2017-12-17', 1, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -274,7 +275,7 @@ INSERT INTO `quanan` (`id`, `tenQuanAn`, `soNha`, `tenDuong`, `tenPhuong`, `tenQ
 (13, 'Quán Ăn Test 3', 40, 'Lê Văn Việt', 'Tăng Nhơn Phú A', '', '106.790033', '10.846153', 5, 'ga hap', ' quan xa', 'rts1.jpg', 27, '2016-06-20', 0, NULL),
 (14, 'Quán Ăn Test 4', 60, 'Lê Văn Việt', 'Tăng Nhơn Phú A', 'Quận 9', '106.793335', '10.845161', 4, 'ca hap', 'quan gan', 'rts1.jpg', 40, '2016-09-05', 0, NULL),
 (31, 'quan an', 1, '1', '1', '1', '106.770832', '10.849781', 2, NULL, 'không có mô tả', 'q3.PNG', NULL, '2016-02-01', 0, NULL),
-(36, 'quán ăn 2', 1, 'a', 'a', 'a', '111', '111', 2, NULL, 'không có mô tả', '13.png', NULL, '2016-11-18', 1, 4.0),
+(36, 'quán ăn 2', 1, 'a', 'a', 'a', '111', '111', 2, NULL, 'không có mô tả', 'rts1.jpg', NULL, '2016-11-18', 1, 4.0),
 (37, 'quán 03', 1, '1', '1', '1', '1', '1', 1, NULL, NULL, 'voz.PNG', NULL, '2015-11-09', 2, 0.0),
 (42, 'quán', 1, '1', '1', '1', '1', '1', 1, NULL, NULL, 'qew.PNG', NULL, '2016-03-13', NULL, NULL);
 
@@ -518,7 +519,7 @@ ALTER TABLE `monan`
 -- AUTO_INCREMENT for table `nguoidung`
 --
 ALTER TABLE `nguoidung`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 --
 -- AUTO_INCREMENT for table `nhanxet`
 --
