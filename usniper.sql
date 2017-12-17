@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 01, 2017 at 01:20 PM
+-- Generation Time: Dec 17, 2017 at 03:41 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.1
 
@@ -158,7 +158,7 @@ CREATE TABLE `nguoidung` (
   `ngayDangKy` date DEFAULT NULL,
   `trangThai` int(1) NOT NULL,
   `ngayBlock` date DEFAULT NULL,
-  `rand` text NOT NULL
+  `rand` text
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -185,7 +185,8 @@ INSERT INTO `nguoidung` (`id`, `userName`, `pass`, `tenNguoiDung`, `soThich`, `Q
 (23, 'adminUTE', '04e71eef25629b240136128341f25887', 'default', NULL, 2, NULL, NULL, NULL, 1, NULL, '51329611252531865210721711423114228725418856115233'),
 (24, '12345', '07676b60675193f89d75720cbff07694', 'default', NULL, 2, NULL, NULL, NULL, 1, NULL, '513296112525350914028356926052316833968148490183369'),
 (25, 'ass', '494b091dc1f2550ce644e847f7cd9f58', 'default', NULL, 2, NULL, NULL, NULL, 1, NULL, '51329611255611536751531123063129641316813984'),
-(26, 'test', '827ccb0eea8a706c4c34a16891f84e7b', 'default', 'dealine', 1, NULL, 'deadline.jpg', NULL, 1, NULL, '513296112525341851733492331513296112525341');
+(26, 'test', '827ccb0eea8a706c4c34a16891f84e7b', 'default', 'dealine', 1, NULL, 'deadline.jpg', NULL, 1, NULL, '513296112525341851733492331513296112525341'),
+(27, 'myadmin1234', 'e10adc3949ba59abbe56e057f20f883e', 'kuma', NULL, 1, NULL, NULL, NULL, 1, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -258,15 +259,15 @@ CREATE TABLE `quanan` (
 --
 
 INSERT INTO `quanan` (`id`, `tenQuanAn`, `soNha`, `tenDuong`, `tenPhuong`, `tenQuan`, `lng`, `lat`, `idLoaiQuanAn`, `monNoiTieng`, `moTa`, `hinhAnh`, `luotTraCuu`, `ngayThem`, `luotDanhGia`, `diemTB`) VALUES
-(1, 'Ngày Mai', 1, 'Lê Văn Việt', 'Tăng Nhơn Phú A', 'Quận 9', '106.795552', '10.845762', 1, 'Gà hấp bia', 'Quán có nhiều món phù hợp tiêu chí : ngon - bổ - rẻ. Phù hợp với túi tiền sinh viên', 'rts2.jpg', 379, '2016-08-07', 2, 3.0),
+(1, 'Ngày Mai', 1, 'Lê Văn Việt', 'Tăng Nhơn Phú A', 'Quận 9', '106.795552', '10.845762', 1, 'Gà hấp bia', 'Quán có nhiều món phù hợp tiêu chí : ngon - bổ - rẻ. Phù hợp với túi tiền sinh viên', 'rts2.jpg', 382, '2016-08-07', 2, 3.0),
 (2, '2 Thế Giới', 2, 'Lê Văn Việt ', 'Hiệp Phú', 'Quận 9', '106.775740', '10.847132', 3, 'Cơm gà xối mỡ  20k', 'đặc biệt !!!', 'han1.png', 227, '2016-10-02', 3, 4.0),
-(3, 'Lẩu Võ Văn Ngân', 1230, 'Võ Văn Ngân  ', 'Bình Thọ', 'Thủ Đức', '106.768695', '10.849853', 2, 'Lẩu tự chọn 5k', 'Độc - lạ', 'rts1.jpg', 245, '2016-11-07', 2, 4.0),
+(3, 'Lẩu Võ Văn Ngân', 1230, 'Võ Văn Ngân  ', 'Bình Thọ', 'Thủ Đức', '106.768695', '10.849853', 2, 'Lẩu tự chọn 5k', 'Độc - lạ', 'rts1.jpg', 249, '2016-11-07', 2, 4.0),
 (4, 'Le Van Kien', 140, 'Võ Văn Ngân    ', 'Bình Thọ', 'Thủ Đức', '106.761411', '10.850390', 4, 'Chân gà nướng', 'Nổi tiếng', 'rts1.jpg', 204, '2016-09-05', 0, NULL),
 (5, 'Hoang Duy', 123, '', '', '', '-741', '3221340', 5, 'ga rung', ' quan gan', 'rts1.jpg', 58, '2016-09-04', 0, NULL),
 (6, 'Hừng Đông', 21, 'Hoàng Diệu 2    ', 'Linh Chiểu', 'Thủ Đức', '106.771015', '10.854169', 1, 'Buffet hải sản đặc biệt', 'Bình thường', 'rts1.jpg', 68, '2016-10-03', 0, NULL),
 (7, 'Ngoai Que', 60, 'Lê Văn Việt', 'Tăng Nhơn Phú A', '', '106.799085', '10.844410', 1, 'ga chien', 'Khong co', 'rts1.jpg', 70, '2016-04-03', 0, NULL),
-(8, 'Cơm tấm Thống Nhất', 40, '', '', '', '-1341', '841344', 5, 'ca hap', 'dang sua', 'rts2.jpg', 137, '2016-10-02', 3, 4.7),
-(9, '2 Con Bò', 2, 'Lê Văn Chí ', 'Linh Trung', 'Thủ Đức', '106.778094', '10.861352', 5, 'Bít tết bò', 'Vị trí thuận tiện', 'rts3.jpg', 98, '2016-11-01', 0, NULL),
+(8, 'Cơm tấm Thống Nhất', 40, '', '', '', '-1341', '841344', 5, 'ca hap', 'dang sua', 'rts2.jpg', 147, '2016-10-02', 3, 4.7),
+(9, '2 Con Bò', 2, 'Lê Văn Chí ', 'Linh Trung', 'Thủ Đức', '106.778094', '10.861352', 5, 'Bít tết bò', 'Vị trí thuận tiện', 'rts3.jpg', 99, '2016-11-01', 0, NULL),
 (10, 'Cơm Thống nhất', 34, 'Lê Văn Việt', '', '', '41', '3241340', 6, 'ga hap', ' quan gan', 'rts1.jpg', 200, '2016-09-05', 0, NULL),
 (11, 'Quán ăn Test 1', 34, 'Lê Văn Việt', 'Tăng Nhơn Phú A', '', '106.799464', '10.846838', 2, 'ga nuong', 'chua co', 'rts1.jpg', 30, '2016-05-01', 0, NULL),
 (12, 'Quán ăn Test 2', 13, 'Lê Văn Việt', 'Tăng Nhơn Phú A', '', '106.789379', '10.843013', 1, 'ga nung', 'quan hap', 'rts1.jpg', 42, '2016-09-04', 2, 4.5),
@@ -517,7 +518,7 @@ ALTER TABLE `monan`
 -- AUTO_INCREMENT for table `nguoidung`
 --
 ALTER TABLE `nguoidung`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 --
 -- AUTO_INCREMENT for table `nhanxet`
 --
