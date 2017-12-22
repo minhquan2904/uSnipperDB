@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 17, 2017 at 03:58 AM
+-- Generation Time: Dec 22, 2017 at 04:33 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.1
 
@@ -88,7 +88,7 @@ CREATE TABLE `monan` (
 --
 
 INSERT INTO `monan` (`id`, `tenMonAn`) VALUES
-(1, 'gà rừng'),
+(1, 'gà rừng a 1'),
 (2, 'ga nướng'),
 (3, 'nướng'),
 (4, 'bo thui'),
@@ -167,8 +167,8 @@ CREATE TABLE `nguoidung` (
 
 INSERT INTO `nguoidung` (`id`, `userName`, `pass`, `tenNguoiDung`, `soThich`, `Quyen`, `Email`, `hinhAnh`, `ngayDangKy`, `trangThai`, `ngayBlock`, `rand`) VALUES
 (4, 'luffy', '827ccb0eea8a706c4c34a16891f84e7b', 'Lufy D Monkey', 'mon chien 2dcp', 2, 'fvhsuhuhdc@sdffd.com', 'images/mqavt.jpg', '2016-11-25', 1, NULL, '51329611252531865210721711423114228725418856115233'),
-(5, 'franky', '827ccb0eea8a706c4c34a16891f84e7b', 'Franky', 'mon luoc', 1, 'fvhsuhuhdc@sdffd.com', 'images/mqavt.jpg', '2016-11-08', 0, '2017-05-24', ''),
-(6, 'ussop', 'fcea920f7412b5da7be0cf42b8c93759', 'Ussop Ling', 'mon nuong', 2, 'fvhsuhuhdc@sdffd.com', 'images/mqavt.jpg', '2016-11-21', 0, '2017-05-31', ''),
+(5, 'franky', '827ccb0eea8a706c4c34a16891f84e7b', 'Franky', 'mon luoc', 3, 'fvhsuhuhdc@sdffd.com', 'images/mqavt.jpg', '2016-11-08', 0, '2017-05-24', ''),
+(6, 'ussop', '827ccb0eea8a706c4c34a16891f84e7b', 'Ussop Ling', 'mon nuong', 3, 'fvhsuhuhdc@sdffd.com', 'images/mqavt.jpg', '2016-11-21', 1, NULL, ''),
 (7, 'robin', '4122cb13c7a474c1976c9706ae36521d', 'Nico Robin', 'mon luoc', 3, 'fvhsuhuhdc@sdffd.com', 'robin.png', '2016-11-16', 0, '2017-05-31', ''),
 (8, 'sanji', 'e10adc3949ba59abbe56e057f20f883e', 'Sanji', 'mon nuong', 1, 'fvhsuhuhdc@sdffd.com', 'images/mqavt.jpg', '2016-11-22', 0, '2016-12-04', ''),
 (9, 'kuma', '827ccb0eea8a706c4c34a16891f84e7b', 'Hentai Kume', 'mon nuong', 2, 'fvhsuhuhdc@sdffd.com', 'zoroavt.jpg', '2016-11-10', 1, NULL, ''),
@@ -179,7 +179,7 @@ INSERT INTO `nguoidung` (`id`, `userName`, `pass`, `tenNguoiDung`, `soThich`, `Q
 (15, 'hhhhh', 'e10adc3949ba59abbe56e057f20f883e', 'aasaa', NULL, 1, NULL, NULL, NULL, 0, '2016-12-04', ''),
 (16, 'a', 'c4ca4238a0b923820dcc509a6f75849b', 'default', NULL, 2, NULL, NULL, NULL, 0, '2016-12-13', ''),
 (17, 'zoro1', 'c4ca4238a0b923820dcc509a6f75849b', 'default', NULL, 2, NULL, NULL, NULL, 0, '2017-03-14', ''),
-(18, 'shank', 'e10adc3949ba59abbe56e057f20f883e', 'default', NULL, 2, NULL, NULL, NULL, 0, '2017-05-31', ''),
+(18, 'shank', 'e10adc3949ba59abbe56e057f20f883e', 'default', NULL, 2, NULL, NULL, NULL, 0, '2018-05-31', ''),
 (19, 'mihawk', 'e10adc3949ba59abbe56e057f20f883e', 'default', NULL, 2, NULL, NULL, NULL, 0, '2017-05-31', ''),
 (22, '<script>alert(\'XSS\')</script>', '827ccb0eea8a706c4c34a16891f84e7b', 'default', NULL, 2, NULL, NULL, NULL, 1, NULL, ''),
 (23, 'adminUTE', '04e71eef25629b240136128341f25887', 'default', NULL, 2, NULL, NULL, NULL, 1, NULL, '51329611252531865210721711423114228725418856115233'),
@@ -212,13 +212,12 @@ CREATE TABLE `nhanxet` (
 INSERT INTO `nhanxet` (`id`, `noiDung`, `idQuanAn`, `idNguoiDung`, `ghiChu`, `ngayThem`, `trangThai`) VALUES
 (1, 'quan an co nhieu mon ngon', 1, 1, 'none', '2016-11-01', 1),
 (2, 'quán sạch , đẹp', 2, 1, 'none', '2016-10-03', 1),
-(3, 'th?i ?? ph?c v? t?t', 1, 2, 'none', '2016-11-02', 1),
 (4, 't?i ??y ?n th?i c?c b?n', 4, 1, 'xao', '2016-11-01', 1),
 (7, 'yeah', 9, 3, 'none', '2016-10-02', 1),
 (8, ' r?t v?a t?i ti?n sinh vi?n', 7, 6, 'none', '2016-09-04', 1),
 (9, 'ngon qu?', 5, 1, 'none', '0000-00-00', 1),
 (10, 'b?nh th??ng', 6, 1, 'none', '2016-11-07', 1),
-(11, 'quan an co nhieu mon ngon', 1, 1, 'none', '2016-11-09', 1),
+(11, 'quan an co nhieu mon ngon', 1, 1, 'none', '2016-11-09', 0),
 (16, 'tôi muốn bình luận cho quán ăn này, bình luận của tôi có thể không hoàn toàn chính xác nhưng nó là một bình luận xuất phát từ việc đọc những bình luận khác của quán ăn. Bình luận của tôi có mục đích là để góp ý các bình luận khác và đồng thời tăng một lượt bình luận của quán ăn', 3, 7, NULL, '2016-11-29', 1),
 (17, 'bình luận mới', 3, 7, NULL, '2016-11-29', 0),
 (18, 'bình luận mới', 3, 7, NULL, '2016-11-29', 1),
@@ -260,24 +259,27 @@ CREATE TABLE `quanan` (
 --
 
 INSERT INTO `quanan` (`id`, `tenQuanAn`, `soNha`, `tenDuong`, `tenPhuong`, `tenQuan`, `lng`, `lat`, `idLoaiQuanAn`, `monNoiTieng`, `moTa`, `hinhAnh`, `luotTraCuu`, `ngayThem`, `luotDanhGia`, `diemTB`) VALUES
-(1, 'Ngày Mai', 1, 'Lê Văn Việt', 'Tăng Nhơn Phú A', 'Quận 9', '106.795552', '10.845762', 1, 'Gà hấp bia', 'Quán có nhiều món phù hợp tiêu chí : ngon - bổ - rẻ. Phù hợp với túi tiền sinh viên', 'rts2.jpg', 382, '2016-08-07', 2, 3.0),
-(2, '2 Thế Giới', 2, 'Lê Văn Việt ', 'Hiệp Phú', 'Quận 9', '106.775740', '10.847132', 3, 'Cơm gà xối mỡ  20k', 'đặc biệt !!!', 'han1.png', 227, '2016-10-02', 3, 4.0),
+(1, 'Ngày Mai', 1, 'Lê Văn Việt', 'Tăng Nhơn Phú A', 'Quận 9', '106.795552', '10.845762', 1, 'Gà hấp bia', 'Quán có nhiều món phù hợp tiêu chí : ngon - bổ - rẻ. Phù hợp với túi tiền sinh viên', 'rts2.jpg', 386, '2016-08-07', 2, 3.0),
+(2, '2 Thế Giới', 2, 'Lê Văn Việt ', 'Hiệp Phú', 'Quận 9', '106.775740', '10.847132', 3, 'Cơm gà xối mỡ  20k', 'đặc biệt !!!', 'han1.png', 229, '2016-10-02', 3, 4.0),
 (3, 'Lẩu Võ Văn Ngân', 1230, 'Võ Văn Ngân  ', 'Bình Thọ', 'Thủ Đức', '106.768695', '10.849853', 2, 'Lẩu tự chọn 5k', 'Độc - lạ', 'rts1.jpg', 249, '2016-11-07', 2, 4.0),
-(4, 'Le Van Kien', 140, 'Võ Văn Ngân    ', 'Bình Thọ', 'Thủ Đức', '106.761411', '10.850390', 4, 'Chân gà nướng', 'Nổi tiếng', 'rts1.jpg', 204, '2016-09-05', 0, NULL),
+(4, 'Le Van Kien', 140, 'Võ Văn Ngân    ', 'Bình Thọ', 'Thủ Đức', '106.761411', '10.850390', 4, 'Chân gà nướng', 'Nổi tiếng', 'rts1.jpg', 205, '2016-09-05', 0, NULL),
 (5, 'Hoang Duy', 123, '', '', '', '-741', '3221340', 5, 'ga rung', ' quan gan', 'rts1.jpg', 58, '2016-09-04', 0, NULL),
 (6, 'Hừng Đông', 21, 'Hoàng Diệu 2    ', 'Linh Chiểu', 'Thủ Đức', '106.771015', '10.854169', 1, 'Buffet hải sản đặc biệt', 'Bình thường', 'rts1.jpg', 68, '2016-10-03', 0, NULL),
-(7, 'Ngoai Que', 60, 'Lê Văn Việt', 'Tăng Nhơn Phú A', '', '106.799085', '10.844410', 1, 'ga chien', 'Khong co', 'rts1.jpg', 70, '2016-04-03', 0, NULL),
-(8, 'Cơm tấm Thống Nhất', 40, '', '', '', '-1341', '841344', 5, 'ca hap', 'dang sua', 'rts2.jpg', 147, '2016-10-02', 3, 4.7),
+(7, 'Ngoai Que', 60, 'Lê Văn Việt', 'Tăng Nhơn Phú A', '', '106.799085', '10.844410', 1, 'ga chien', 'Khong co', 'rts1.jpg', 71, '2016-04-03', 0, NULL),
+(8, 'Cơm tấm Thống Nhất', 40, '', '', '', '-1341', '841344', 5, 'ca hap', 'dang sua', 'rts2.jpg', 153, '2016-10-02', 3, 4.7),
 (9, '2 Con Bò', 2, 'Lê Văn Chí ', 'Linh Trung', 'Thủ Đức', '106.778094', '10.861352', 5, 'Bít tết bò', 'Vị trí thuận tiện', 'rts3.jpg', 99, '2016-11-01', 0, NULL),
-(10, 'Cơm Thống nhất', 34, 'Lê Văn Việt', '', '', '41', '3241340', 6, 'ga hap', ' quan gan', 'rts1.jpg', 200, '2016-09-05', 0, NULL),
+(10, 'Cơm Thống nhất', 34, 'Lê Văn Việt', '', '', '41', '3241340', 6, 'ga hap', ' quan gan', 'rts1.jpg', 202, '2016-09-05', 0, NULL),
 (11, 'Quán ăn Test 1', 34, 'Lê Văn Việt', 'Tăng Nhơn Phú A', '', '106.799464', '10.846838', 2, 'ga nuong', 'chua co', 'rts1.jpg', 30, '2016-05-01', 0, NULL),
-(12, 'Quán ăn Test 2', 13, 'Lê Văn Việt', 'Tăng Nhơn Phú A', '', '106.789379', '10.843013', 1, 'ga nung', 'quan hap', 'rts1.jpg', 42, '2016-09-04', 2, 4.5),
+(12, 'Quán ăn Test 2', 13, 'Lê Văn Việt', 'Tăng Nhơn Phú A', '', '106.789379', '10.843013', 1, 'ga nung', 'quan hap', 'rts1.jpg', 43, '2016-09-04', 2, 4.5),
 (13, 'Quán Ăn Test 3', 40, 'Lê Văn Việt', 'Tăng Nhơn Phú A', '', '106.790033', '10.846153', 5, 'ga hap', ' quan xa', 'rts1.jpg', 27, '2016-06-20', 0, NULL),
 (14, 'Quán Ăn Test 4', 60, 'Lê Văn Việt', 'Tăng Nhơn Phú A', 'Quận 9', '106.793335', '10.845161', 4, 'ca hap', 'quan gan', 'rts1.jpg', 40, '2016-09-05', 0, NULL),
 (31, 'quan an', 1, '1', '1', '1', '106.770832', '10.849781', 2, NULL, 'không có mô tả', 'q3.PNG', NULL, '2016-02-01', 0, NULL),
 (36, 'quán ăn 2', 1, 'a', 'a', 'a', '111', '111', 2, NULL, 'không có mô tả', 'rts1.jpg', NULL, '2016-11-18', 1, 4.0),
 (37, 'quán 03', 1, '1', '1', '1', '1', '1', 1, NULL, NULL, 'voz.PNG', NULL, '2015-11-09', 2, 0.0),
-(42, 'quán', 1, '1', '1', '1', '1', '1', 1, NULL, NULL, 'qew.PNG', NULL, '2016-03-13', NULL, NULL);
+(42, 'quán', 1, '1', '1', '1', '1', '1', 1, NULL, NULL, 'qew.PNG', NULL, '2016-03-13', NULL, NULL),
+(43, 'ád', 1, '1', '1', '1', '1', '1', 1, NULL, NULL, 'Capture.PNG', 1, '2017-12-17', NULL, NULL),
+(44, '13242141', 1, '1', '1', '1', '123213', '213', 1, NULL, NULL, 'Capture.PNG', 1, '2017-12-17', NULL, NULL),
+(45, '2114', 1, '1', '1', '1', '23', '23', 1, NULL, NULL, '22851967_790808604455014_6813682495518314791_n.jpg', 2, '2017-12-17', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -354,7 +356,8 @@ INSERT INTO `quanan_monan` (`idQuanAn`, `idMonAn`, `hinhAnh`, `moTa`, `giaTien`)
 (31, 2, '14886238_871398419664014_1095004201_n.jpg', '1', 1),
 (36, 1, '7.png', 'cÃ¡', 2000000),
 (36, 22, '2.png', 'cÃ¡ ', 2000000),
-(42, 1, 'noimagefound.jpg', '1', 1);
+(42, 1, 'noimagefound.jpg', '1', 1),
+(45, 1, 'noimagefound.jpg', '1', 1);
 
 -- --------------------------------------------------------
 
@@ -395,7 +398,8 @@ CREATE TABLE `thongbao` (
 --
 
 INSERT INTO `thongbao` (`id`, `noiDung`, `nguoiGui`, `idNguoiDung`, `trangThai`) VALUES
-(1, 'Đã xóa bình luận: test dlt . Vì lí do vi phạm tiêu chuẩn cộng đồng', 'Quản trị viên', 7, 1);
+(1, 'Đã xóa bình luận: test dlt . Vì lí do vi phạm tiêu chuẩn cộng đồng', 'Quản trị viên', 7, 1),
+(2, 'Đã xóa bình luận: th?i ?? ph?c v? t?t . Vì lí do vi phạm tiêu chuẩn cộng đồng', 'Quản trị viên', 2, 1);
 
 -- --------------------------------------------------------
 
@@ -529,7 +533,7 @@ ALTER TABLE `nhanxet`
 -- AUTO_INCREMENT for table `quanan`
 --
 ALTER TABLE `quanan`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 --
 -- AUTO_INCREMENT for table `quanantam`
 --
@@ -544,7 +548,7 @@ ALTER TABLE `quyen`
 -- AUTO_INCREMENT for table `thongbao`
 --
 ALTER TABLE `thongbao`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- Constraints for dumped tables
 --
